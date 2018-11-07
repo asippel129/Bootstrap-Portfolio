@@ -1,74 +1,80 @@
 <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
-    <title>Basic Portfolio Activity</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bootstrap Portfolio</title>
+    <!-- our bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 </head>
 
-<body>
-   
-    <div class="wrapper">
+
+<body background="assets/images/pipes.png">
+<header>
+
+   <!-- Section 1: Navbar-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <!-- Our brand / logo -->
+      <a class="navbar-brand" href="#">Anna Sippel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <!-- Collapsible button -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+
+          <!-- The links of our navbar -->
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+  </header>
+
+<!-- the container -->
+  <div class="container">
+      <div style="background-color:lightpink; padding-left:5px">
+
+     <!-- Contact Part -->
+      <div class="row">
+          <div class="col-md-12">
+              <h1> Contact</h1>
+              <hr>
+          </div>
+      </div>
+
+      <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+          </div>
+          <div class="form-group">
+              <label for="exampleFormControlInput1">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+            </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+        </form>
         
-        <header>
-             <h1><p>Anna Sippel</p></h1>
-                  <nav>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                    </ul>
-                </nav>
-                </header></div>
-            <hr>
-
-    <div class="content">
-
-    <h2>Portfolio</h2>
-   
-    <hr>
-<!-- <div class="relative"> -->
-    <div class="card" id="hangman">
-      <img src="assets/images/kitten2.jpg" alt="Avatar" style="width:100%">
-      <div class="container">
-        <h4><b>Hangman</b></h4> 
-      </div>
-    </div>
-
-    <div class="card" id="rpg">
-        <img src="assets/images/kitten.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>RPG Game</b></h4> 
-        </div>
-      </div>
-
-      <div class="card" id="trivia">
-        <img src="assets/images/kitten2.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Trivia Game</b></h4> 
-        </div>
-      </div>
-
-      <div class="card" id="rutgers">
-        <img src="assets/images/kitten.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Rutgers Info Widget</b></h4> 
-        </div>
-      </div>
-
-      <div class="card" id="rock">
-        <img src="assets/images/kitten.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Rock Paper Scissors</b></h4> 
-        </div>
       </div>
 
 
-    </div>
 
-    <div class="footer">
-            <p>copyright2018</p>
-    </div>
 
-    </body>
+  </header>
+  </body>
